@@ -1,0 +1,11 @@
+﻿<Window x:Class="The_Reminder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Reminder To Me" Height="350" Width="525" Background="#FF75E604"
+        DataContext="{Binding Main, Source={StaticResource Locator}}">
+    <Grid>
+        <Label Content="Your computer will be locked in 20 seconds; Please tidy your works;" HorizontalAlignment="Left" Margin="39,160,0,0" VerticalAlignment="Top" Height="34" Width="440" FontWeight="Bold" FontSize="13"/>
+        <Label Content="{Binding CurrentTime}" HorizontalAlignment="Left" Margin="174,85,0,0" VerticalAlignment="Top" Name="currentTime" FontSize="24" FontFamily="Showcard Gothic" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
